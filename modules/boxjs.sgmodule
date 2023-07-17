@@ -5,5 +5,5 @@
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
 
 [Script]
-Rewrite: BoxJs = type=http-request,pattern=^https?:\/\/(.+\.)?boxjs\.(com|net),script-path=https://script.hub/convert/_start_/https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js/_end_/chavy.boxjs.js?type=plain-text&target=plain-text&evalScriptmodi=body%3D%22const%20isLanceX%20%3D%20'undefined'%20!%3D%20typeof%20%5C%24native%3Bif%20(isLanceX)%7B%24rocket%20%3D%20%7B%7D%7D%3B%22%20%2B%20body
+Rewrite: BoxJs = type=http-request,pattern=^https?:\/\/(.+\.)?boxjs\.(com|net),script-path=https://script.hub/convert/_start_/https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js/_end_/chavy.boxjs.js?type=plain-text&target=plain-text&evalScriptmodi=body%3D%22const%20isLanceX%20%3D%20'undefined'%20!%3D%20typeof%20%5C%24native%3Bif%20(isLanceX)%7B%24rocket%20%3D%20%7B%7D%7D%3B%22%20%2B%20body, timeout=120
 hostname = %INSERT% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
